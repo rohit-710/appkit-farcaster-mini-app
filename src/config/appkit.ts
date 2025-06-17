@@ -4,12 +4,17 @@ import { arbitrum, mainnet } from '@reown/appkit/networks'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { WagmiAdapter } from '@reown/appkit-adapter-wagmi'
 import React from 'react'
+import { sdk } from '@farcaster/frame-sdk'
 
 // Setup queryClient
 const queryClient = new QueryClient()
 
 // Get projectId from https://cloud.reown.com
 const projectId = process.env.REACT_APP_PROJECT_ID || '' // Replace with your actual project ID
+
+// Initialize Farcaster Mini App
+sdk.actions.ready()
+  .catch((error: unknown) => console.error('Failed to initialize Farcaster Mini App:', error))
 
 // Create metadata object
 const metadata = {
