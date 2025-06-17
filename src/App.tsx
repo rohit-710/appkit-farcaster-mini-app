@@ -1,4 +1,3 @@
-import React from 'react'
 import { AppKitProvider } from './config/appkit'
 import './App.css'
 
