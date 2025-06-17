@@ -10,7 +10,7 @@ import { sdk } from '@farcaster/frame-sdk'
 const queryClient = new QueryClient()
 
 // Get projectId from https://cloud.reown.com
-const projectId = process.env.REACT_APP_PROJECT_ID || '' // Replace with your actual project ID
+const projectId = process.env.NEXT_PUBLIC_PROJECT_ID || '' // Replace with your actual project ID
 
 // Initialize Farcaster Mini App
 sdk.actions.ready()
