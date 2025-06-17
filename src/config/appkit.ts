@@ -20,7 +20,7 @@ sdk.actions.ready()
 const metadata = {
   name: 'Farcaster Mini App',
   description: 'A simple Farcaster mini app with wallet connection',
-  url: 'https://example.com', // Replace with your actual domain
+  url: 'https://appkit-farcaster-mini-app.vercel.app/', // Replace with your actual domain
   icons: ['https://avatars.githubusercontent.com/u/179229932']
 }
 
