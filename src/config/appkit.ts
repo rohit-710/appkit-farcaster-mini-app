@@ -9,7 +9,7 @@ import React from 'react'
 const queryClient = new QueryClient()
 
 // Get projectId from https://cloud.reown.com
-const projectId = process.env.PROJECT_ID || '' // Replace with your actual project ID
+const projectId = process.env.REACT_APP_PROJECT_ID || '' // Replace with your actual project ID
 
 // Create metadata object
 const metadata = {
