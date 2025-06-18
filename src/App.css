@@ -50,14 +50,14 @@
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 100%);
-  padding: 20px;
+  padding: 1rem;
   box-sizing: border-box;
 }
 
 .wallet-section {
   width: 100%;
   max-width: 400px;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(10px);
@@ -70,8 +70,8 @@
 }
 
 h1 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
   color: white;
   text-align: center;
   background: linear-gradient(135deg, #8A63D2 0%, #6B4CA3 100%);
@@ -88,23 +88,18 @@ appkit-button {
   align-items: center;
 }
 
-@media (max-width: 480px) {
+@media (min-width: 768px) {
   .app-container {
-    padding: 16px;
-  }
-  
-  .wallet-section {
-    padding: 1.5rem;
-    width: 90%;
-  }
-  
-  h1 {
-    font-size: 1.75rem;
-    margin-bottom: 1.5rem;
+    padding: 2rem;
   }
 
-  appkit-button {
-    width: 90%;
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .wallet-section {
+    padding: 2rem;
   }
 }
 
